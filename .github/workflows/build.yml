@@ -13,6 +13,8 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build:win
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/upload-artifact@v4
         with:
           name: Assistant-Entrepreneur-Windows
@@ -27,6 +29,8 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build:mac
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/upload-artifact@v4
         with:
           name: Assistant-Entrepreneur-Mac
