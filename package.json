@@ -2,16 +2,15 @@
   "name": "assistant-entrepreneur",
   "version": "1.0.0",
   "description": "Assistant IA pour le développement de tes entreprises",
+  "author": "Maelan",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
     "build:win": "electron-builder --win",
     "build:mac": "electron-builder --mac"
   },
-  "dependencies": {
-    "electron": "^28.0.0"
-  },
   "devDependencies": {
+    "electron": "^28.0.0",
     "electron-builder": "^24.9.1"
   },
   "build": {
